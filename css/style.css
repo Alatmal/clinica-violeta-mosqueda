@@ -1,18 +1,13 @@
-/*
-
-TemplateMo 566 Medic Care
-
-https://templatemo.com/tm-566-medic-care
-
-*/
-
-/*---------------------------------------
-  CUSTOM PROPERTIES ( VARIABLES )
------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
 
 @font-face {
     font-family: fashion-fetish-regular;
     src: url(Fashion\ Fetish\ Regular.ttf);
+}
+
+@font-face {
+    font-family: blue-skies;
+    src: url(BlueSkies2.ttf);
 }
 
 :root {
@@ -51,6 +46,14 @@ body {
 /*---------------------------------------
   TYPOGRAPHY
 -----------------------------------------*/
+
+.estetica {
+  font-family: blue-skies;
+  color: #F2C9C5;
+  font-weight: 400;
+  text-align: center;
+  font-size: 5rem;
+}
 
 h2,
 h3,
@@ -265,6 +268,9 @@ strong {
 /*---------------------------------------
   HERO
 -----------------------------------------*/
+.pinky-hs{
+  color: var(--primary-color);
+}
 .hero {
   padding-top: 0rem;
 }
@@ -315,6 +321,19 @@ strong {
   border-radius: 20px;
 }
 
+.signature-logo {
+  position: relative;
+}
+
+.signature-logo img {
+  margin-top: -4.5rem;
+  margin-left: 13rem;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+}
+
+
 @media only screen and (max-width: 600px) and (min-width: 300px) {
 
 
@@ -334,34 +353,6 @@ strong {
 /*---------------------------------------
   FEATURED
 -----------------------------------------*/
-
-
-
-.featured-service-home {
-  background-color: var(--primary-color);
-  padding: 10px 20px;
-  border-radius: 25px;
-  margin: 5px 20px;
-}
-
-.featured-service-home-b {
-  text-align: right;
-  margin: 10px 20px;
-  background-color: var(--primary-color);
-  padding: 5px 20px;
-  border-radius: 25px;
-}
-
-.featured-service-home img {
-  height: 200px;
-  width: 225px;
-}
-
-.featured-service-home-b img {
-  height: 200px;
-  width: 225px;
-}
-
 .featured-circle {
   border-radius: 100%;
   width: 350px;
@@ -471,16 +462,6 @@ strong {
     display: none;
   }
 
-  .featured-service-home, .featured-service-home-b {
-    width: 70vw;
-    height: 25vh;
-    margin-bottom: 50px;
-  }
-
-  .featured-service-home p, .featured-service-home-b p {
-    font-size: 1.8rem;
-  }
-
   .especialidad {
     width: 35vw;
     height: 30vh;
@@ -497,16 +478,6 @@ strong {
         padding: 0.8em 0;
     }
 
-  .featured-service-home p, .featured-service-home-b p {
-    font-size: 1.4rem;
-  }
-
-  .featured-service-home, .featured-service-home-b {
-    width: 70vw;
-    height: 35vh;
-    margin-bottom: 50px;
-  }
-
   .especialidad {
     width: 70vw;
     height: 35vh;
@@ -515,12 +486,6 @@ strong {
 }
 
 @media (max-width: 670px) {
-  .featured-service-home, .featured-service-home-b {
-    width: 70vw;
-    height: 95vh;
-    margin-bottom: 50px;
-  }
-
   body, html{
         width: 100vw;
         overflow-x: hidden;
@@ -1018,6 +983,20 @@ strong {
   .hero .container {
     height: 740px;
   }
+
+  .signature-logo img{
+    margin-top: -3.5rem;
+    margin-left: 13.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .signature-logo img{
+    margin-top: -3.5rem;
+    margin-left: 13.5rem;
+    height: 90px;
+    width: 90px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1081,6 +1060,13 @@ strong {
     width: 320px;
     height: 320px;
   }
+
+  .signature-logo img{
+    width: 85px;
+    height: 85px;
+    margin-top: -3rem;
+    margin-left: 20.5rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1129,6 +1115,11 @@ strong {
   .contact-phone {
     font-size: 12px;
   }
+
+  .signature-logo img{
+    margin-top: -4.5rem;
+    margin-left: 13.5rem;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -1154,7 +1145,9 @@ strong {
     left: 42px;
   }
 
-
+  .signature-logo img{
+    margin-left: 13.5rem;
+  }
 }
 
 .carousel-item img {
