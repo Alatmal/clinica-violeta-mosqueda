@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: blue-skies;
-    src: url(BlueSkies2.ttf);
+    font-family: hand-written;
+    src: url(Amalfi\ Coast.ttf);
 }
 
 :root {
@@ -48,11 +48,11 @@ body {
 -----------------------------------------*/
 
 .estetica {
-  font-family: blue-skies;
+  font-family: hand-written;
   color: #F2C9C5;
   font-weight: 400;
   text-align: center;
-  font-size: 5rem;
+  font-size: 2rem;
 }
 
 h2,
@@ -127,7 +127,7 @@ a:hover {
 }
 
 .titles-colored {
-  color: var(--primary-color);
+  color: var(--title-color);
   font-family: fashion-fetish-regular;
 }
 .section-padding {
@@ -268,9 +268,6 @@ strong {
 /*---------------------------------------
   HERO
 -----------------------------------------*/
-.pinky-hs{
-  color: var(--primary-color);
-}
 .hero {
   padding-top: 0rem;
 }
@@ -348,6 +345,14 @@ strong {
     width: 25vw;
   }
 }
+/*---------------------------------------
+  Contactenos
+-----------------------------------------*/
+
+.rounded-map img {
+  border-radius: 50%;
+}
+
 
 
 /*---------------------------------------
@@ -388,7 +393,7 @@ strong {
   margin: 0 10px;
 }
 
-
+/* REVISAR ESPECIALIDAD*/
 .especialist-a {
   width: 160px;
   height: 250px;
@@ -618,6 +623,22 @@ strong {
 
 .navbar-toggler .navbar-toggler-icon:after {
   top: 8px;
+}
+
+/*---------------------------------------
+  SERVICES
+-----------------------------------------*/
+
+.servicios h2 {
+  text-align: center;
+}
+
+.servicio {
+  margin:10px 0px;
+}
+
+.agenda-inicio h2{
+  text-align: center;
 }
 
 /*---------------------------------------
@@ -1000,6 +1021,11 @@ strong {
 }
 
 @media screen and (max-width: 991px) {
+
+  #myCarousel {
+    margin-top: 0px;
+  }
+
   body {
     padding-top: 74px;
   }
@@ -1070,6 +1096,12 @@ strong {
 }
 
 @media screen and (max-width: 767px) {
+
+  #myCarousel {
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+
   .heroText {
     padding: 1.5rem;
   }
@@ -1101,6 +1133,12 @@ strong {
 }
 
 @media screen and (max-width: 480px) {
+
+  #myCarousel {
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+
   .heroText {
     padding: 1rem;
   }
@@ -1123,6 +1161,12 @@ strong {
 }
 
 @media screen and (max-width: 360px) {
+  #myCarousel {
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+
+
   .featured-number {
     font-size: 5rem;
   }
@@ -1151,7 +1195,10 @@ strong {
 }
 
 .carousel-item img {
-  margin-top: 80px;
   height: 440px;
   width: 460px;
+}
+
+#myCarousel {
+  margin-top: 50px;
 }
