@@ -348,9 +348,34 @@ strong {
 /*---------------------------------------
   Contactenos
 -----------------------------------------*/
-
-.rounded-map img {
+.map-location {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 480px;
+  height: 480px;
   border-radius: 50%;
+  background: url(../images/gallery/location.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+.location {
+  text-align: center;
+}
+
+.location img {
+  border-radius:  12rem 12rem 0 0;
+}
+
+.contact-ico i{
+  margin: 0px 10px;
+}
+
+.hs-contactenos {
+  color: var(--primary-color);
+  margin-bottom: 25px;
 }
 
 
@@ -1097,6 +1122,13 @@ strong {
 
 @media screen and (max-width: 767px) {
 
+  .map-location {
+    height: 50vh;
+    width: 90vw;
+    border-radius: 12rem 12rem 0 0;
+  }
+
+
   #myCarousel {
     margin-top: 0px;
     margin-bottom: 40px;
@@ -1134,6 +1166,12 @@ strong {
 
 @media screen and (max-width: 480px) {
 
+  .map-location {
+    height: 40vh;
+    width: 90vw;
+    border-radius: 12rem 12rem 0 0;
+  }
+
   #myCarousel {
     margin-top: 0px;
     margin-bottom: 100px;
@@ -1161,6 +1199,13 @@ strong {
 }
 
 @media screen and (max-width: 360px) {
+
+  .map-location {
+    height: 250px;
+    width: 350px;
+    border-radius: 12rem 12rem 0 0;
+  }
+
   #myCarousel {
     margin-top: 0px;
     margin-bottom: 40px;
