@@ -1,18 +1,20 @@
 
   (function ($) {
-  
+
   "use strict";
-    
+
 
     // NAVBAR
-    $('.navbar-nav .nav-link').click(function(){
-        
-        $(".navbar-collapse").collapse('hide');
-    });
 
-    $('.navbar-toggler').click(function() {
-      $('.nav-especialidades').show();
+    $('.especialidades-btn').click(function() {
+      $('.nav-especialidade').animate({
+        height: 'toggle'
+      });
     })
+
+
+
+
 
     // REVIEWS CAROUSEL
     $('.reviews-carousel').owlCarousel({
@@ -70,6 +72,7 @@
         }
       }
     });
-    
+
+    $('.')
 
   })(window.jQuery);

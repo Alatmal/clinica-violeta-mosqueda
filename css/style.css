@@ -532,17 +532,29 @@ strong {
 /*---------------------------------------
   NAVIGATION
 -----------------------------------------*/
-.nav-especialidades li{
-  list-style: none;
+
+.especialidades-btn {
+    cursor: pointer;
 }
 
-.nav-especialidades {
-  display: none;
+.nav-especialidade li{
+  color: var(--primary-color);
+  list-style: none;
+  margin: 8px 5px;
 }
+
+.nav-especialidade {
+  display: none;
+  z-index: 1;
+  position: absolute;
+}
+
+
 
 .navbar {
   padding-top: 20px;
   padding-bottom: 20px;
+
 }
 
 .navbar-brand {
@@ -1122,11 +1134,12 @@ strong {
 
 @media screen and (max-width: 767px) {
 
-  .map-location {
-    height: 50vh;
-    width: 90vw;
-    border-radius: 12rem 12rem 0 0;
-  }
+.map-location {
+  height: 50vh;
+  width: 90vw;
+  border-radius: 12rem 12rem 0 0;
+}
+
 
 
   #myCarousel {
@@ -1199,6 +1212,10 @@ strong {
 }
 
 @media screen and (max-width: 360px) {
+
+  .nav-especialidade {
+    position: static;
+  }
 
   .map-location {
     height: 250px;
