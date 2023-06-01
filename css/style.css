@@ -419,51 +419,8 @@ strong {
 }
 
 /* REVISAR ESPECIALIDAD*/
-.especialist-a {
-  width: 160px;
-  height: 250px;
-  background-color: black;
-  position: absolute;
-  margin-left: 115%;
-  margin-top: -35%;
-}
 
-.especialist-b {
-  width: 160px;
-  height: 250px;
-  background-color: black;
-  position: absolute;
-  margin-left: -25%;
-  margin-top: -35%;
 
-}
-
-.especialidad {
-  border-radius: 10px;
-  background-color: #fff5f5;
-  height: 270px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  padding: 0 20px;
-
-}
-
-.especialidad-b {
-  text-align: end;
-  background-color: black;
-  color: white;
-}
-
-.especialidad-b h5 {
-  margin-right: 5px;
-  color: var(--primary-color);
-}
-
-.especialidad h5 {
-  font-family:  fashion-fetish-regular;
-  margin-top: 12px;
-  margin-bottom: 10px;
-}
 
 @media (max-width: 990px) {
 
@@ -471,10 +428,6 @@ strong {
     width: 50vw;
     height: 40vh;
     margin-bottom: 50px;
-  }
-
-  .especialist-a, .especialist-b {
-    display: none;
   }
 
 }
@@ -488,16 +441,7 @@ strong {
     }
 
 
-  .especialist-a, .especialist-b {
-    display: none;
-  }
 
-  .especialidad {
-    width: 35vw;
-    height: 30vh;
-    margin-bottom: 50px;
-    margin-right: -20px;
-  }
 }
 
 @media (max-width: 395px) {
@@ -508,11 +452,6 @@ strong {
         padding: 0.8em 0;
     }
 
-  .especialidad {
-    width: 70vw;
-    height: 35vh;
-    margin-bottom: 50px;
-  }
 }
 
 @media (max-width: 670px) {
@@ -522,11 +461,7 @@ strong {
         padding: 0.8em 0;
     }
 
-  .especialidad {
-    width: 20vw;
-    height: 25vh;
-    margin-bottom: 50px;
-  }
+
 }
 
 /*---------------------------------------
