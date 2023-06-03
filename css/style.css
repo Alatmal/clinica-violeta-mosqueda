@@ -349,25 +349,30 @@ strong {
   Contactenos
 -----------------------------------------*/
 .map-location {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 480px;
-  height: 480px;
-  border-radius: 50%;
+
+
+  width: 100vw;
+  height: 80vh;
+  border-radius: 50% 50% 0 0;
   background: url(../images/gallery/location.jpeg);
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  /* -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); */
+}
+
+.contact-card {
+  background-color: rgba(247,241,240,0.4);
+  margin: 10px auto;
+  border-radius: 5px 5px 20px 20px;
+  padding: 10px;
+  height: 380px;
+  width: 330px;
 }
 
 .location {
   text-align: center;
 }
 
-.location img {
-  border-radius:  12rem 12rem 0 0;
-}
 
 .contact-ico i{
   margin: 0px 10px;
@@ -376,6 +381,7 @@ strong {
 .hs-contactenos {
   color: var(--primary-color);
   margin-bottom: 25px;
+  font-family: fashion-fetish-regular;
 }
 
 
@@ -994,6 +1000,10 @@ strong {
 
 @media screen and (max-width: 991px) {
 
+  .nav-especialidade {
+    position: static;
+  }
+
   #myCarousel {
     margin-top: 0px;
   }
@@ -1069,12 +1079,15 @@ strong {
 
 @media screen and (max-width: 767px) {
 
-.map-location {
-  height: 50vh;
-  width: 90vw;
-  border-radius: 12rem 12rem 0 0;
-}
+  .map-location {
+    height: 50vh;
+    width: 90vw;
+    border-radius: 12rem 12rem 0 0;
+  }
 
+  .nav-especialidade {
+    position: static;
+  }
 
 
   #myCarousel {
@@ -1113,6 +1126,10 @@ strong {
 }
 
 @media screen and (max-width: 480px) {
+
+  .nav-especialidade {
+    position: static;
+  }
 
   .map-location {
     height: 40vh;
