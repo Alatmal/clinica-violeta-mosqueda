@@ -619,6 +619,42 @@ strong {
   text-align: center;
 }
 
+.image-for-service {
+  float: left;
+  height:200px;
+  width:240px;
+  margin-right: 15px;
+}
+
+.service-page p, h2{
+  text-align: center;
+}
+
+.service-card-a {
+  background-color: background-color: rgba(247,241,240,0.4);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.service-card-b h5{
+  text-align: center;
+  padding: 50px;
+}
+
+.list-treatment {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  width:33%;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+}
+
+
 /*---------------------------------------
   TIMELINE
 -----------------------------------------*/
@@ -1167,6 +1203,12 @@ strong {
 
   .nav-especialidade {
     position: static;
+  }
+
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .map-location {
