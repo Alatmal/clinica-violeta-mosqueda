@@ -621,9 +621,10 @@ strong {
 
 .image-for-service {
   float: left;
-  height:200px;
-  width:240px;
+  height:auto;
+  max-width:120px;
   margin-right: 15px;
+  margin-top: -38px;
 }
 
 .service-page p, h2{
@@ -631,7 +632,7 @@ strong {
 }
 
 .service-card-a {
-  background-color: background-color: rgba(247,241,240,0.4);
+  background-color: rgba(247,241,240,0.4);
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 10px;
@@ -1163,6 +1164,20 @@ strong {
 
 @media screen and (max-width: 480px) {
 
+  .service-card-a {
+    display: flex;
+    
+  }
+
+  .list-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .list-treatment {
+    width: 30%;
+  }
+
   .nav-especialidade {
     position: static;
   }
@@ -1200,6 +1215,31 @@ strong {
 }
 
 @media screen and (max-width: 360px) {
+
+  .service-card-a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list-treatment {
+    width: 80%;
+  }
+  
+  .service-card-a h2 {
+    font-size: 1.1rem;
+  }
+
+  .service-card-b h5{
+    font-size: 0.8rem;
+  }
+
+  .image-for-service {
+    align-self: center;
+    float: none;
+    height: 110px;
+    width: 80px;
+    margin-top: 2px;
+  }
 
   .nav-especialidade {
     position: static;
