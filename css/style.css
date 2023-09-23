@@ -1295,6 +1295,7 @@ strong {
   width: 460px;
 }
 
-#myCarousel {
-  margin-top: 50px;
+.carousel-container {
+  margin-top: 120px;
 }
+
