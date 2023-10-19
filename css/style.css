@@ -1166,16 +1166,33 @@ strong {
 
   .service-card-a {
     display: flex;
-    
+    flex-direction: column;
+  }
+
+  .list-treatment {
+    width: 80%;
+  }
+  
+  .service-card-a h2 {
+    font-size: 1.1rem;
+  }
+
+  .service-card-b h5{
+    font-size: 0.8rem;
+  }
+
+  .image-for-service {
+    align-self: center;
+    float: none;
+    height: 110px;
+    width: 80px;
+    margin-top: 2px;
   }
 
   .list-container {
     display: flex;
     flex-direction: column;
-  }
-  
-  .list-treatment {
-    width: 30%;
+    justify-content: center;
   }
 
   .nav-especialidade {
@@ -1213,6 +1230,8 @@ strong {
     margin-left: 13.5rem;
   }
 }
+
+
 
 @media screen and (max-width: 360px) {
 
