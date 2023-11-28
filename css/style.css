@@ -389,6 +389,15 @@ strong {
 /*---------------------------------------
   FEATURED
 -----------------------------------------*/
+
+.items-treatment {
+  font-family: fashion-fetish-regular;
+}
+
+.items-treatment li::marker {
+  color: var(--primary-color);
+}
+
 .featured-circle {
   border-radius: 100%;
   width: 350px;
@@ -1172,7 +1181,7 @@ strong {
   .list-treatment {
     width: 80%;
   }
-  
+
   .service-card-a h2 {
     font-size: 1.1rem;
   }
@@ -1243,7 +1252,7 @@ strong {
   .list-treatment {
     width: 80%;
   }
-  
+
   .service-card-a h2 {
     font-size: 1.1rem;
   }
@@ -1317,4 +1326,3 @@ strong {
 .carousel-container {
   margin-top: 120px;
 }
-
