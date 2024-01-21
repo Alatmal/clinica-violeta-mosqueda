@@ -330,6 +330,11 @@ strong {
   width: 80px;
 }
 
+.blur-load {
+  background-size: cover;
+  background-position: center;
+}
+
 
 @media only screen and (max-width: 600px) and (min-width: 300px) {
 
@@ -662,6 +667,57 @@ strong {
 .list-container {
   display: flex;
   justify-content: center;
+}
+
+.treatment-card {
+  background-color: pink;
+  width: 220px;
+  margin: 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: height 0.3s ease-in-out;
+}
+
+.card-description {
+  display: none;
+}
+
+.treatment-card p {
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: normal;
+  font-weight: bold;
+}
+
+.treatment-card-container {
+  width: 50vw;
+}
+
+#treat-arrow {
+  color: white;
+}
+
+
+
+.card-description-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+
+.treatment-card-info {
+  width: 25vw;
+  height: 35vh;
+}
+
+.treatment-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 

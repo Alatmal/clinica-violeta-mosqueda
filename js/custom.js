@@ -13,7 +13,13 @@
     })
 
 
+    $('.treatment-card').click(function () {
+      var cardDescription = $(this).find('.card-description');
 
+      cardDescription.animate({
+        height: 'toggle'
+      });
+    });
 
 
     // REVIEWS CAROUSEL
