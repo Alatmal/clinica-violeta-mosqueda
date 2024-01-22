@@ -14,12 +14,15 @@
 
 
     $('.treatment-card').click(function () {
-      var cardDescription = $(this).find('.card-description');
+   // Find the .card-description within the clicked .treatment-card
+   var cardDescription = $(this).find('.card-description');
 
-      cardDescription.animate({
-        height: 'toggle'
-      });
-    });
+   // Collapse all other .card-description elements except the clicked one
+   $('.card-description').not(cardDescription).slideUp();
+
+   // Toggle the height of the found .card-description
+   cardDescription.slideToggle();
+ });
 
 
     // REVIEWS CAROUSEL

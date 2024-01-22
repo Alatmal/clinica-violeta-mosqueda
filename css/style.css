@@ -270,6 +270,9 @@ strong {
 -----------------------------------------*/
 .hero {
   padding-top: 0rem;
+  background: url('../images/slider/DSC04345.jpg') center/cover no-repeat;
+  height: 90vh;
+  width: 100vw;
 }
 
 .hero .container {
@@ -279,14 +282,28 @@ strong {
 }
 
 .heroText {
-  background: var(--white-color);
+  background:  rgba(255, 255, 255, 0.5);
   position: absolute;
   z-index: 2;
-  bottom: 0;
-  right: 0;
+  margin-right: -15px;
+  margin-left: -15px;
+  top: 20vh;
   padding: 1.5rem 2.5rem;
-  width: 50%;
+  width: 100%;
+  transition: 0.3s ease;
 }
+
+.heroText p {
+  color: white;
+  font-weight: 400;
+}
+
+.heroText:hover {
+
+  background:  rgba(191, 191, 191, 1);
+}
+
+
 
 .contact-phone {
   font-weight: var(--font-weight-semibold);
