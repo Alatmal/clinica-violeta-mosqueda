@@ -455,6 +455,41 @@ strong {
   margin: 0 10px;
 }
 
+.logo-nuestro-equipo {
+  width: 250px;
+  height: 230px;
+}
+
+.image-container-equipo {
+  display: flex;
+  justify-content: center;
+}
+
+.container-carousel-text {
+  display: flex;
+  flex-direction: row;
+}
+
+.professionals-cards-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.professional-card {
+  width: 30%;
+  background: grey;
+  margin:20px;
+
+}
+
+.picture-professional-card  img{
+  width: 300px;
+  height: 280px;
+  border-radius: 100%;
+  background-color: blue;
+}
+
 /* REVISAR ESPECIALIDAD*/
 
 
@@ -687,7 +722,9 @@ strong {
 }
 
 .treatment-card {
-  background-color: pink;
+  border-radius: 3px;
+  background: rgb(255,236,250);
+  background: linear-gradient(60deg, rgba(255,236,250,1) 0%, rgba(255,230,248,1) 9%, rgba(255,230,248,0.8283898305084746) 44%);
   width: 220px;
   margin: 5px 5px;
   display: flex;
@@ -724,11 +761,13 @@ strong {
   display: flex;
   flex-direction: row;
   margin-bottom: 25px;
+  justify-content: space-around;
 }
 
 .treatment-card-info {
-  width: 25vw;
+  width: 40vw;
   height: 35vh;
+  background-color: rgba(247,241,240,0.4);
 }
 
 .treatment-card-container {
@@ -1245,6 +1284,32 @@ strong {
 }
 
 @media screen and (max-width: 480px) {
+  .card-description-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .treatment-card p {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: normal;
+    font-weight: bold;
+  }
+
+
+
+  .treatment-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .treatment-card-info, .treatment-card-container {
+    width: 100vw;
+  }
 
   .service-card-a {
     display: flex;
@@ -1316,6 +1381,19 @@ strong {
 
 
 @media screen and (max-width: 360px) {
+
+  .card-description-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .treatment-card {
+    width: 60px;
+  }
+
+  .treatment-card-info, .treatment-card-container {
+    width: 100vw;
+  }
 
   .service-card-a {
     display: flex;
@@ -1392,8 +1470,9 @@ strong {
 }
 
 .carousel-item img {
-  height: 440px;
-  width: 460px;
+  height: 300px;
+  width: 320px;
+  border-radius: 5px;
 }
 
 .carousel-container {
