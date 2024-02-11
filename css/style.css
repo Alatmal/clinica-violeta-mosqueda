@@ -777,6 +777,18 @@ strong {
   animation: changeBorderColor 5s infinite alternate;
 }
 
+.servicioB {
+  margin: 10px 0px;
+  width: 190px; /* Adjust as needed for the square shape */
+  height: 70px; /* Adjust as needed for the square shape */
+  border: 2px solid #FFFFFF; /* Initial border color */
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  animation: changeBorderColor 7s infinite alternate;
+}
+
 @keyframes changeBorderColor {
     0% {
       border-color: #FFFFFF; /* Initial border color */
@@ -786,14 +798,24 @@ strong {
     }
   }
 
-  .servicio a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-decoration: none;
-    color: inherit;
-  }
+.servicio a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.servicioB a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
 
 .agenda-inicio h2{
   text-align: center;
