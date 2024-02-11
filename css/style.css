@@ -1115,6 +1115,8 @@ strong {
 .reviews-thumb {
   margin-bottom: 0;
   padding: 32px;
+  height: 300px;
+  width: 400px;
 }
 
 .reviews-text {
