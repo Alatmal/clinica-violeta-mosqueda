@@ -326,19 +326,22 @@ strong {
 
 .whatsapp-button {
   display: inline-block;
-  background-color: #F2C9C5; /* Same background color as provided */
+  background-color: rgba(255, 255, 255, 0.5);; /* Same background color as provided */
   color: white;
   text-decoration: none;
+  border: #FFFFFF solid 2px; 
   padding: 10px 20px;
-  border-radius: 20px; /* Same border radius as provided */
+  border-radius: 5px; /* Same border radius as provided */
   font-size: 16px;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 .whatsapp-button:hover {
-  background-color: #128C7E; /* Darker WhatsApp green color on hover */
+  background-color: #F2C9C5;
   animation: 1s ease-in-out; /* Retain the same animation effect */
+  color: white;
+  font-weight: bolder;
 }
 
 
@@ -845,6 +848,12 @@ strong {
   padding: 50px;
 }
 
+.weird-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .list-treatment {
   margin: 20px;
   padding: 20px;
@@ -858,17 +867,19 @@ strong {
 }
 
 .treatment-card {
-  border-radius: 3px;
-  background: rgb(255,236,250);
-  background: linear-gradient(60deg, rgba(255,236,250,1) 0%, rgba(255,230,248,1) 9%, rgba(255,230,248,0.8283898305084746) 44%);
-  width: 220px;
   margin: 5px 5px;
-  display: flex;
   align-items: center;
+  margin: 10px 8px;
+  width: 240px; 
+  height: 120px; 
+  border: 2px solid var(--primary-color); /* Initial border color */
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
   justify-content: center;
-  flex-direction: column;
-  cursor: pointer;
-  transition: height 0.3s ease-in-out;
+  align-items: center;
 }
 
 .card-description {
@@ -876,7 +887,7 @@ strong {
 }
 
 .treatment-card p {
-  color: white;
+  color: var(--p-color);
   font-size: 1.1rem;
   text-align: center;
   line-height: normal;
@@ -1443,6 +1454,12 @@ strong {
     justify-content: center;
     align-items: center;
   }
+  
+  .shit-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
 
 
   .treatment-card-info, .treatment-card-container {
